@@ -1,0 +1,157 @@
+
+.myworks{
+}
+.myworks-title::after{
+   content: 'Образцы из моих работ';
+   background-color: #333;
+}
+.myworks-title::before{
+   width: 330px;
+   background: #fff;
+}
+.myworks-card {
+   display: flex;
+   flex-direction: column;
+   min-width: 0;
+   word-wrap: break-word;
+   background: #000;
+   background-clip: border-box;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 0.7s;
+   max-width: 400px;
+   overflow: hidden;
+   opacity: 1;
+   padding: 20px 15px;
+   border: none;
+   position: relative;
+}
+.myworks-card::before,
+.myworks-card::after{
+   content: '';
+   position: absolute;
+   width: 2px;
+   height: 0;
+   background: #61DBFB;
+   transition: 2s;
+}
+.myworks-card::before{
+   top: 0;
+   left: 0;
+}
+.myworks-card::after{
+   right: 0;
+   bottom: 0;
+}
+
+.myworks-card-body::before,
+.myworks-card-body::after{
+   content: '';
+   position: absolute;
+   height: 2px;
+   width: 0;
+   background: #61DBFB;
+   transition: 2s;
+}
+.myworks-card-body::after{
+   top: 0;
+   left: 0;
+}
+.myworks-card-body::before{
+   bottom: 0;
+   right: 0;
+}
+
+.myworks .swiper-pagination-bullets{
+   bottom: -35px;
+}
+.myworks .swiper-slide{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.myworks .swiper-pagination-bullets span{
+   width: 15px;
+   height: 15px;
+   background: #000;
+   border-radius: 50%;
+   transition: 0.5s;
+   margin: 0 8 !important;
+   display: inline-block;
+   cursor: pointer;
+}
+.myworks .swiper-pagination-bullets span.swiper-pagination-bullet-active{
+   background: #fff;
+}
+
+.myworks a{
+   color: #007bff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.myworks a:hover{
+   text-decoration: underline;
+   color: #005dc0;
+}
+.myworks-card:hover{
+   opacity: 0.8;
+}
+
+.myworks-card-head {
+   padding-bottom: 55.5%;
+   position: relative;
+}
+.myworks-card-head img{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   object-fit: cover;
+}
+.myworks .swiper-button-prev::after,
+.myworks .swiper-button-next::after{
+   color: #fff;
+}
+.myworks-card-body {
+   -webkit-box-flex: 1;
+   -ms-flex: 1 1 auto;
+   flex: 1 1 auto;
+   padding: 5px;
+   margin-bottom: 15px;
+}
+.myworks-card-image {
+
+}
+.myworks-card-body h2{
+   font-size: 29px;
+   margin-bottom: 20px;
+}
+.myworks-card-body p{
+   font-size: 18px;
+   line-height: 25px;
+}
+
+/* Media */
+
+
+@media(min-width: 1100px){
+   .myworks .swiper-slide.swiper-slide-active + .swiper-slide .myworks-card::before,
+   .myworks .swiper-slide.swiper-slide-active + .swiper-slide .myworks-card::after{
+      height: 100%;
+   }
+
+   .myworks .swiper-slide.swiper-slide-active + .swiper-slide .myworks-card .myworks-card-body::before,
+   .myworks .swiper-slide.swiper-slide-active + .swiper-slide .myworks-card .myworks-card-body::after{
+      width: 100%;
+   }
+}
+
+@media(max-width: 576px){
+   .myworks-card {
+      padding: 20px 10px;
+   }
+   .myworks-card-body p{
+      font-size: 17px;
+   }
+}

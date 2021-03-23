@@ -1,0 +1,75 @@
+/* Skills section styling */
+.screen__content_skills{
+   height: 100%;
+}
+.skills {
+   font-family: 'Ubuntu', sans-serif;
+   height: 100%;
+}
+.skills .container{
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.section-title{
+   padding: 0 0 30px 0;
+   margin-bottom: 60px;
+}
+.skills-title::after {
+   content: 'Personal Info';
+   background: #333;
+}
+.skills-title_skl::after{
+   content: 'What I Know';
+}
+
+/* Resume */
+.skills-container{
+   flex: 1 1 auto;
+   display: flex;
+   flex-direction: column;
+}
+.skills-resume {
+   flex: 1 1 auto;
+}
+.comment{
+   text-align: center;
+   font-size: 16px;
+   letter-spacing: 1px;
+   font-weight: 300;
+}
+.skills-resume__column {
+   padding: 0 10px;
+}
+.skills-resume__item {
+   margin-bottom: 20px;
+   border-bottom: 1px solid rgba(204, 204, 204, 0.1);
+   padding: 5px 0;
+   display: flex;
+   font-size: 19px;
+}
+.skills-resume__title{
+   max-width: 900px;
+   margin: 0 auto;
+   text-align: center;
+   font-size: 25px;
+   letter-spacing: 1px;
+   line-height: 35px;
+   font-weight: 300;
+}
+
+
+
+@media(max-width: 1200px){
+   .skills-resume,
+   .skills-items {
+      padding: 0;
+   }
+}
+@media(max-width: 576px){
+   .skills-resume__title{
+      font-size: 18px;
+      letter-spacing: 0.7px;
+      line-height: 30px;
+   }
+}

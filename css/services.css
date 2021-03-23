@@ -1,0 +1,69 @@
+.services {
+   font-family: 'Poppins', sans-serif;
+   color: #fff;
+}
+.services-title::before {
+   background: #fff;
+}
+.services-title::after {
+   background: #333;
+   content: 'Языки, на которых я говорю :)';
+}
+.services-title_tools::after {
+   content: 'Инструменты';
+}
+
+.services-title::before {
+   width: 330px;
+}
+.services-content {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 0 -10px;
+}
+.services-content-column{
+   padding: 0 10px;
+   flex: 1 0 33.33%;
+   margin-bottom: 25px;
+   display: flex;
+}
+.services-content .card{
+   background: #222;
+   transition: 0.3s;
+   cursor: pointer;
+   transform: scale(1);
+   justify-content: center;
+}
+.services-content .card:hover{
+   transform: scale(1.03);
+   background-color: #000;
+}
+
+.services-content-column .card .card-body i{
+   font-size: 50px;
+}
+
+@media(max-width: 992px){
+   .services-content-column{
+      flex: 0 0 50%;
+   }
+   .services-content-column{
+      flex: 0 0 50%;
+   }
+   .d-mobile-none{
+      display: none;  
+   }
+}
+
+@media(max-width: 768px){
+   .services-content-column{
+      flex: 0 0 100%;
+   } 
+   .services-content-column .card .card-body i{
+      font-size: 30px;
+   }
+   .services-content-column{
+      margin: 0 0 10px 0;
+   }
+}

@@ -1,0 +1,203 @@
+.page__screen_footer{
+   background-color: #1d1d1d;
+   font-family: 'Ubuntu', sans-serif;
+}
+.page__screen_footer_2{
+   background-color: #1a1a1a;
+   font-family: 'Ubuntu', sans-serif; 
+}
+.page__screen_d_none{
+   display: none;
+}
+
+.footer {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.footer-title::after{
+   content: 'Скажи привет :)';
+   background-color: #1d1d1d;
+}
+.footer-title::before{
+   background-color: #fff;
+}
+.footer-column {
+   flex: 0 0 50%;
+}
+.footer-message {
+   max-width: 640px;
+}
+.footer-message__row {
+   display: flex;
+   flex-direction: column;
+}
+.footer-message__column {
+   display: flex;
+}
+.footer-form__item {
+   padding: 0 5px;
+   flex: 0 0 50%;
+   margin-bottom: 25px;
+}
+
+.footer-form__item label{
+   font-weight: 300;
+   font-size: 22px;
+    margin: 0 0 15px 0;
+    display: block;
+}
+
+.footer-form__input {
+   font-family: sans-serif;
+   letter-spacing: 0.7px;
+   font-size: 15px;
+   color: #a3a3a3;
+}
+.footer-form__input.err{
+   box-shadow: 0 0 12px rgba(255, 0, 0, 0.8);
+}
+.form-message__btn{
+   color: #fff;
+   background: #2b2b2b;
+   box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.8);
+}
+.form-message__btn:hover{
+   background: #3a3a3a;
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.footer-content {
+   margin-bottom: 60px;
+   text-align: center;
+}
+.footer-logo i{
+   font-size: 45px;
+   color: #fff;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.footer-logo i:hover{
+   color: crimson;
+}
+.footer-motto {
+   font-size: 20px;
+   font-weight: 300;
+   max-width: 80%;
+   margin: 0 auto 30px auto;
+   font-style: italic;
+   letter-spacing: 1px;
+   line-height: 25px;
+}
+.footer-social {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.footer-social__item{
+   margin: 0 10px;
+   opacity: 0;
+   transform: translate(0,100%);
+   transition: all 0.6s ease 0s;
+}
+.footer-social__icon {
+   width: 55px;
+   height: 55px;
+   background-color: #333;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: 0.5s
+}
+.social__item_1{
+   transition-delay: 0.2s;
+}
+
+.social__item_2{
+   transition-delay: 0.6s;
+}
+
+.social__item_3{
+   transition-delay: 1s;
+}
+.screen._active .footer-social__item{
+   opacity: 1;
+   transform: translate(0px, 0px);
+}
+
+.footer-social__icon:hover{
+   background: #fff;
+   color: #000;
+}
+
+.footer-social__icon a{
+   font-size: 30px;
+   transition: 0.5s;
+}
+.footer-social__icon a.fa-telegram-plane{
+   position: relative;
+   right: 2px;
+}
+.footer-social__icon a.fa-envelope{
+   position: relative;
+}
+
+/* Icon hover */
+.footer-social__icon a{
+   color: #fff;
+}
+.footer-social__icon:hover a{
+   color: #000;
+}
+
+.footer-form__submit{
+   padding: 0 10px;
+}
+/* Icon hover */
+
+/* Medias */
+
+@media(max-width: 576px){
+   .footer-form__item label{
+      font-size: 18px;
+   }
+}
+
+@media(max-width: 1100px){
+   .page__screen_d_none{
+      display: block;
+   }
+   .page__screen_d_block{
+      display: none;
+   }
+   .page__screen_footer_2 .screen__content{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+   }
+   .page__screen_footer_2 .footer-column{
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+   }
+   .page__screen_footer_2 .footer-content{
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+   .footer-column{
+      flex: 1 0 100%;
+   }
+   .footer-message{
+      max-width: none;
+   }
+}
+
+@media(max-width: 600px){
+   .footer-message__column{
+      display: block;
+   }
+}
+
