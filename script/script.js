@@ -1,4 +1,4 @@
-age.textContent = new Date().getFullYear() - 2003;
+document.getElementById('age').textContent = new Date().getFullYear() - 2003;
 let menuLinks = document.querySelectorAll('.menu__link');
 let wrapper = document.querySelector('.wrapper');
 let firstScreenText = document.querySelector('.screen__content_1');
@@ -118,23 +118,23 @@ function animateText() {
 pageSlider.init();
 
 // Menu
-// function typeWriter(selector, txt, speed, i) {
-//    let el = document.querySelector(selector);
-//    if (i < txt.length) {
-//       el.innerHTML += txt[i]
-//       i++;
-//       setTimeout(() => {
-//          typeWriter(selector, txt, speed, i)
-//       }, speed);
-//    }
-//    else {
-//       setTimeout(() => {
-//          el.innerHTML = ''
-//          typeWriter(selector, txt, speed, 0)
-//       }, 1000);
-//    }
-// }
-// typeWriter('.home-text_3 span', 'Frontend Developer', 200, 0);
+function typeWriter(selector, txt, speed, i) {
+   let el = document.querySelector(selector);
+   if (i < txt.length) {
+      el.innerHTML += txt[i]
+      i++;
+      setTimeout(() => {
+         typeWriter(selector, txt, speed, i)
+      }, speed);
+   }
+   else {
+      setTimeout(() => {
+         el.innerHTML = ''
+         typeWriter(selector, txt, speed, 0)
+      }, 1000);
+   }
+}
+typeWriter('.home-text_3 span', 'Frontend Developer', 200, 0);
 let nav = document.querySelector('.navbar');
 document.querySelector('.menu-burger').onclick = () => {
    nav.classList.toggle('active')

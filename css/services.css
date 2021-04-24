@@ -51,9 +51,6 @@
    .services-content-column{
       flex: 0 0 50%;
    }
-   .d-mobile-none{
-      display: none;  
-   }
 }
 
 @media(max-width: 768px){

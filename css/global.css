@@ -30,16 +30,19 @@ textarea{
    border: 0;
    display: block;
    width: 100%;
-   padding: 0 20px;
    transition: 0.4s;
    border-radius: 5px;
    background: #2b2b2b !important;
+}
+
+input{
+   padding: 0 18px;
    height: 50px;
 }
 
 textarea{
-   min-height: 200px;
-   padding: 20px;
+   min-height: 180px;
+   padding: 18px;
    resize: none;
 }
 
@@ -112,7 +115,7 @@ a{text-decoration: none;}
    transform: translateX(-50%);
 }
 .title_big_after::after{
-   min-width: 260px;
+   min-width: 250px;
    font-size: 16px;
 }
 
@@ -136,6 +139,7 @@ a{text-decoration: none;}
 .d-none{
    display: none;
 }
+
 .card {
    border-radius: 6px;
    text-align: center;
@@ -163,32 +167,18 @@ a{text-decoration: none;}
    margin: 15px 0 20px 0;
 }
 
+@media(max-width: 992px){
+   .d-mobile-none{
+      display: none !important;  
+   }
 
-@media(max-width: 768px){
-   .title{
-      font-size: 30px;
-      margin-bottom: 40px;
-   }
    .card-body {
-      padding: 10px;
+      padding: 16px;
    }
-   .card-body p{
-      font-size: 15px;
-      line-height: 130%;
-   }
-   .card-text {
-      font-size: 18px;
-      margin: 10px 0;
-   }
-   .card-body {
-      padding: 15px;
-   }
-}
 
-@media(max-width: 600px){
    input{
       padding: 0 10px;
-      height: 45px;
+      height: 42px;
    }
    textarea{
       min-height: 120px;
@@ -199,6 +189,27 @@ a{text-decoration: none;}
       width: 150px;
       line-height: 40px;
    }
+}
+
+@media(max-width: 768px){
+   .title{
+      font-size: 30px;
+      margin-bottom: 40px;
+   }
+   .card-body {
+      padding: 10px;
+   }
+   .card-body p{
+      font-size: 14px;
+      line-height: 130%;
+   }
+   .card-text {
+      font-size: 18px;
+      margin: 10px 0;
+   }
+}
+
+@media(max-width: 600px){
    .title::after{
       font-size: 16px;
    }
