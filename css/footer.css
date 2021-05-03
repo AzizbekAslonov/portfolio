@@ -161,6 +161,7 @@
 @media(max-width: 576px){
    .footer-form__item label{
       font-size: 18px;
+      margin: 0 0 5px 0;
    }
 }
 

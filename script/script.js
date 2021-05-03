@@ -3,6 +3,7 @@ let menuLinks = document.querySelectorAll('.menu__link');
 let wrapper = document.querySelector('.wrapper');
 let firstScreenText = document.querySelector('.screen__content_1');
 
+
 let pageSlider = new Swiper('.page', {
    simulateTouch: false,
    // Свои классы
@@ -64,7 +65,7 @@ let pageSlider = new Swiper('.page', {
 
 })
 // SliderClass.realIndex --> Aktivniy bullet!!!
-
+let nav = document.querySelector('.navbar');
 function menuSlider() {
    menuLinks[pageSlider.realIndex].classList.add('active')
    for (let i = 0; i < menuLinks.length; i++) {
@@ -74,6 +75,7 @@ function menuSlider() {
          menuSliderRemove()
          pageSlider.slideTo(i, 800);
          menuLinks[pageSlider.realIndex].classList.add('active')
+         nav.classList.toggle('active')
       })
    }
 }
@@ -135,7 +137,7 @@ function typeWriter(selector, txt, speed, i) {
    }
 }
 typeWriter('.home-text_3 span', 'Frontend Developer', 200, 0);
-let nav = document.querySelector('.navbar');
+
 document.querySelector('.menu-burger').onclick = () => {
    nav.classList.toggle('active')
 }
