@@ -101,6 +101,7 @@ function setScrollType() {
          if (pageContentHeight > window.innerHeight) {
             wrapper.classList.add('free');
             pageSlider.params.freeMode = true;
+            console.log(pageSlider.params.freeMode);
             break;
          }
       }

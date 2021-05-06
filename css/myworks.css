@@ -154,4 +154,7 @@
    .myworks-card-body p{
       font-size: 17px;
    }
+   .myworks-card-head {
+      padding-bottom: 49%;
+   }
 }
