@@ -28,23 +28,12 @@ function formValidate(userData) {
 
       formRemoveErr(input, inputParent);
 
-      if (input.classList.contains('email')) {
-         if (mailUser(input)) {
-            formAddError(input, inputParent);
-            error++;
-         }
-         else {
-            userData[input.id] = input.value;
-         }
+      if (input.value === '') {
+         formAddError(input, inputParent);
+         error++;
       }
       else {
-         if (input.value === '') {
-            formAddError(input, inputParent);
-            error++;
-         }
-         else {
-            userData[input.id] = input.value;
-         }
+         userData[input.id] = input.value;
       }
    }
    return error;
@@ -59,11 +48,6 @@ function formRemoveErr(input, inputParent) {
    input.classList.remove('err');
    inputParent.classList.remove('err');
 };
-
-function mailUser(input) {
-   return !/^[A-Za-z]{2,}[_-]?[A-Za-z0-9]{2,}$/.test(input.value);
-}
-
 // <Validation functions />
 
 

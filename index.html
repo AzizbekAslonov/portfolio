@@ -43,7 +43,7 @@
       <main class="page">
          <div class="page__wrapper">
             <!-- Main -->
-            <section class="page__screen screen">
+            <section class="page__screen screen home">
 
                <div class="screen__content screen__content_1">
                   <div class="home-text_1">Привет, меня зовут</div>
@@ -59,12 +59,12 @@
 
             <!-- About me -->
             <section data-anim="true" class="page__screen screen">
-               <div class="screen__content screen__content_skills">
+               <div class="h100 screen__content about">
 
                   <div class="skills">
                      <!-- Desktop -->
                      <div class='container'>
-                        <div class="title skills-title">О себе
+                        <div class="title skills-title _anim_items _anim_items">О себе
                         </div>
                         <div class="skills-container">
                            <!-- Resume -->
@@ -86,9 +86,9 @@
 
             <!-- My skills part 1 -->
             <section data-anim="true" class="page__screen screen">
-               <div class="screen__content services">
+               <div class="screen__content services services_1">
 
-                  <h2 class="title services-title title_big_after">Мои навыки </h2>
+                  <h2 class="title services-title title_big_after _anim_items">Мои навыки </h2>
                   <div class="screen__text">
                      <div class="services-content">
 
@@ -164,9 +164,9 @@
 
             <!-- My skills part 2 -->
             <section data-anim="true" class="page__screen screen">
-               <div class="screen__content services">
+               <div class="screen__content services services_2">
                   <!--  -->
-                  <h2 class="title services-title services-title_tools">Мои навыки
+                  <h2 class="title services-title services-title_tools _anim_items">Мои навыки
                   </h2>
                   <div class="screen__text">
                      <div class="services-content">
@@ -243,8 +243,8 @@
 
             <!-- My works -->
             <section data-anim="true" class="page__screen screen">
-               <div class="screen__content">
-                  <div class="title myworks-title title_big_after">Мои работы
+               <div class="screen__content works">
+                  <div class="title myworks-title title_big_after _anim_items">Мои работы
                   </div>
                   <!-- Slider main container -->
                   <div class="myworks swiper-container" style="overflow: visible;">
@@ -337,8 +337,8 @@
 
             <!-- Footer -->
             <section data-anim="true" class="page__screen screen page__screen_footer">
-               <div class="screen__content">
-                  <div class="title footer-title">Обратная связь
+               <div class="screen__content footerblock">
+                  <div class="title footer-title _anim_items">Обратная связь
                   </div>
                   <footer class="footer">
                      <div class="footer-column">
@@ -350,7 +350,7 @@
                                     <input autocomplete="off" class="req footer-form__input" id="name" type="text">
                                  </div>
                                  <div class="footer-form__item">
-                                    <label for="mail">Username </label>
+                                    <label for="mail">Username@ </label>
                                     <input autocomplete="off" class="req email footer-form__input" id="mail"
                                        type="text">
                                  </div>
@@ -403,7 +403,7 @@
             <section data-anim="true"
                class="page__screen screen page__screen_footer page__screen_footer_2 page__screen_d_none">
                <div class="screen__content">
-                  <div class="title footer-title">Контакты
+                  <div class="title footer-title _anim_items">Контакты
                   </div>
                   <div class="footer-column">
                      <div class="footer-content">
@@ -414,18 +414,18 @@
                            <i class="fab fa-autoprefixer"></i>
                         </div>
                      </div>
-                     <div class="footer-social">
+                     <div class="footer-social _anim_items">
                         <div class="footer-social__item">
-                           <div class="footer-social__icon social__icon_1"><a target="_blank"
-                                 href="https://t.me/AzizbekAslonov" class="fab fa-telegram-plane"></a></div>
+                           <div class="footer-social__icon"><a target="_blank" href="https://t.me/AzizbekAslonov"
+                                 class="fab fa-telegram-plane"></a></div>
                         </div>
                         <div class="footer-social__item">
-                           <div class="footer-social__icon social__icon_2"><a target="_blank"
-                                 href="mailto:aslonovazizbek318@gmail.com" class="far fa-envelope"></a>
+                           <div class="footer-social__icon"><a target="_blank" href="mailto:aslonovazizbek318@gmail.com"
+                                 class="far fa-envelope"></a>
                            </div>
                         </div>
                         <div class="footer-social__item">
-                           <div class="footer-social__icon social__icon_3"><a target="_blank"
+                           <div class="footer-social__icon"><a target="_blank"
                                  href="https://t.me/PortfolioAslonovAzizbek" class="fas fa-users"></a>
                            </div>
                         </div>
@@ -444,6 +444,9 @@
 
    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script src='https://kit.fontawesome.com/f3e4059bd1.js' crossorigin='anonymous'></script>
+   <script src="script/functions.js"></script>
+   <script src="script/animScroll.js"></script>
+   <script src="script/goto.js"></script>
    <script src="script/script.js"></script>
    <script src="script/sendMessege.js"></script>
 </body>
