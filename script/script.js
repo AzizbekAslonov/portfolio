@@ -66,6 +66,7 @@ function PC_USER() {
          currentSlide.classList.add('_active');
          currentSlide.setAttribute('data-anim', 'false')
       }
+
    }
 
    let pageSlider = new Swiper('.page', {

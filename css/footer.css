@@ -60,11 +60,11 @@
 .form-message__btn{
    color: #fff;
    background: #2b2b2b;
-   box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.8);
+   box-shadow: 2px 2px 4px #000;
 }
 .form-message__btn:hover{
    background: #3a3a3a;
-   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+   box-shadow: 2px 2px 8px #000;
 }
 .footer-content {
    margin-bottom: 60px;
@@ -95,7 +95,8 @@
    margin: 0 0 20px 0;
 }
 
-.footer-social.active .footer-social__item{
+.footer-social.active .footer-social__item,
+.screen._active .footer-social__item{
    opacity: 1;
    transform: translate(0px, 0px);
 }

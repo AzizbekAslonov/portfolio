@@ -50,13 +50,12 @@
 }
 .skills-resume__title{
    max-width: 900px;
-   margin: 0 auto;
+   margin: 0 auto 25px auto;
    text-align: center;
    font-size: 25px;
    letter-spacing: 1px;
    line-height: 35px;
    font-weight: 300;
-   margin: 0 0 20px 0;
 }
 
 

@@ -2,7 +2,6 @@ let form = document.querySelector('#messege');
 
 form.addEventListener('submit', checkAndSend);
 
-
 function checkAndSend(e) {
    e.preventDefault();
    let userData = {};
@@ -50,7 +49,6 @@ function formRemoveErr(input, inputParent) {
 };
 // <Validation functions />
 
-
 async function sendData(userData) {
    const chat_id = '1039710604';
    // Перебирает наш массив
@@ -76,7 +74,7 @@ async function sendData(userData) {
 
       // Если всё OK
       if (req.status === 200) {
-         alert('Данные отправлена, свяжусь в ближайшее время)')
+         alert('Спасибо, данные отправлено)')
       }
 
       // Если ошибка
