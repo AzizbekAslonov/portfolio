@@ -7,17 +7,21 @@ function goto() {
 
       menuLinks[0].classList.add('active')
 
-      menuLinks.forEach(menuLink => {
-         menuLink.classList.add('_active')
-         menuLink.addEventListener('click', onMenuClick)
-      });
+      menuLinks.forEach(menuLink => menuLink.addEventListener('click', onMenuClick));
+
+      window.addEventListener('scroll', () => {
+         document.querySelector('.menu__link.active').classList.remove('active')
+
+         const scrollPixels = window.scrollY;
+         const docHeight = window.innerHeight - document.querySelector('header').offsetHeight;
+
+         const index = Math.floor(scrollPixels / docHeight);
+         menuLinks[index].classList.add('active')
+      })
    }
 
    function onMenuClick(e) {
       e.preventDefault();
-
-      document.querySelector('.menu__link.active').classList.remove('active')
-      this.classList.add('active')
 
       let dataBlock = this.dataset.goto;
       if (dataBlock && document.querySelector(dataBlock)) {
@@ -29,7 +33,6 @@ function goto() {
 
          // Close on scroll
          if (nav.classList.contains('_active')) {
-            console.log('HI');
             document.body.classList.remove('_lock')
             nav.classList.remove('_active')
          }

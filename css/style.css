@@ -49,7 +49,7 @@ header{
 }
 .logo a{
    color: #fff;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 600;
 }
 .menu {
@@ -60,6 +60,11 @@ header{
 .menu li{
    margin: 0 15px;
 }
+
+.txt-type{
+   border-right: 1px solid #fff;
+}
+
 .menu__link_mobile{
    display: none;
 }
