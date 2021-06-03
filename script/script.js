@@ -177,8 +177,8 @@ function init() {
          delay: 2000,
          // На коньчить на последнем слайде
          stopOnLastSlide: true,
-         pauseOnMouseEnter: true,
-         disableOnInteraction: false,
+         // pauseOnMouseEnter: true,
+         // disableOnInteraction: false,
       },
       // Эффекты переключения слайдов_4
       //  coverflow
