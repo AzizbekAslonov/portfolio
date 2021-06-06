@@ -1,6 +1,5 @@
 let nav = document.querySelector('.navbar');
 
-
 function goto() {
    let menuLinks = document.querySelectorAll('.menu__link[data-goto]');
    if (menuLinks.length > 0) {
