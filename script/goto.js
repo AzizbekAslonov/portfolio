@@ -28,7 +28,7 @@ function goto() {
          // Существует ли такой объект
          const gotoBlock = document.querySelector(dataBlock);
          const gotoBlockValue = gotoBlock.getBoundingClientRect().top +
-            pageYOffset - document.querySelector('header').offsetHeight
+            pageYOffset - 0.33 * document.querySelector('header').offsetHeight
 
          // Close on scroll
          if (nav.classList.contains('_active')) {

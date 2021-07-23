@@ -141,6 +141,8 @@ function init() {
    function MOBILE_USER() {
       wrapper.classList.add('loaded');
 
+      animateOnScroll()
+
       const linkGotoUrl = ['.home', '.about', '.services_1', '.services_2', '.works', '.footerblock', '.page__screen_footer_2']
       linkGotoUrl.forEach((url, index) => menuLinks[index].setAttribute('data-goto', url))
 
@@ -155,7 +157,6 @@ function init() {
 
    // Animation
    new TypeWriter(document.querySelector('.txt-type'), ["Фронтенд Pазработчик"], 3000);
-
 
    // My Works slider
    new Swiper('.swiper-container', {
