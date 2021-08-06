@@ -9,13 +9,14 @@ function goto() {
       menuLinks.forEach(menuLink => menuLink.addEventListener('click', onMenuClick));
 
       window.addEventListener('scroll', () => {
-         document.querySelector('.menu__link.active').classList.remove('active')
+         let activeEl = document.querySelector('.menu__link.active');
+         activeEl && activeEl.classList.remove('active')
 
          const scrollPixels = window.scrollY;
          const docHeight = window.innerHeight - document.querySelector('header').offsetHeight;
 
          const index = Math.floor(scrollPixels / docHeight);
-         menuLinks[index].classList.add('active')
+         menuLinks[index] && menuLinks[index].classList.add('active')
       })
    }
 
